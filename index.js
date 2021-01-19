@@ -12,11 +12,10 @@ client.on("ready", e => {
 const triggers = ["hello", "hi"];
 
 client.on("message", msg => {
-    if (triggers.includes(msg.content.toLowerCase()) && msg.channel.id == "801128717694271498") {
-        // msg.reply("fuck you! " + "🙌❤💕😊😎");
+    if (triggers.includes(msg.content.toLowerCase()) && msg.channel.id == process.env.CHANNELID) {
         const idx = Math.floor(Math.random() * replies.length);
         msg.channel.send(replies[idx]);
     }
 });
 
-client.login(process.env.BOTTOKEN);
+client.login(process.env.TOKEN);
