@@ -4,10 +4,12 @@ const { triggers } = require("./data.json");
 
 const hello = require("./commands/hello");
 const gif = require("./commands/gif");
+const dump = require("./commands/dump");
 
 const commands = {
     gif,
-    hello
+    hello,
+    dump
 };
 
 const commandHandler = async msg => {
