@@ -1,0 +1,11 @@
+{
+  "name": "bears-bot",
+  "version": "0.1.1",
+  "description": "Project for learning bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Saavedra",
+  "license": "MIT"
+}
