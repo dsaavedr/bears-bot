@@ -1,3 +1,5 @@
+// TODO: check for files in commands dir and add them to commands object with node fs
+
 const { triggers } = require("./data.json");
 
 const hello = require("./commands/hello");
