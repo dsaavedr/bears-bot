@@ -4,8 +4,15 @@
   "description": "Project for learning to create bots",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Saavedra",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
