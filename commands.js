@@ -1,10 +1,7 @@
-const { triggers } = require("../data.json");
+const { triggers } = require("./data.json");
 
-const fetch = require("node-fetch");
-const { ranx } = require("../utils");
-
-const hello = require("./hello");
-const gif = require("./gif");
+const hello = require("./commands/hello");
+const gif = require("./commands/gif");
 
 const commands = {
     gif,
