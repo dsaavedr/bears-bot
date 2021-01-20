@@ -10,7 +10,7 @@ const facts = async (msg, tokens) => {
 
     const response = await fetch(url, {
         headers: {
-            app_id: "fed78092",
+            app_id: process.env.OXFORDID,
             app_key: process.env.OXFORDKEY
         }
     });
