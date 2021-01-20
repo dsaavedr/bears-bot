@@ -5,11 +5,15 @@ const { triggers } = require("./data.json");
 const hello = require("./commands/hello");
 const gif = require("./commands/gif");
 const dump = require("./commands/dump");
+const catFacts = require("./commands/catFacts");
+const dict = require("./commands/dict");
 
 const commands = {
     gif,
     hello,
-    dump
+    dump,
+    catFacts,
+    dict
 };
 
 const commandHandler = async msg => {
