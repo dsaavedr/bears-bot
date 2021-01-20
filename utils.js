@@ -1,3 +1,5 @@
 const ranx = len => Math.floor(Math.random() * len);
 
-module.exports = { ranx };
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+module.exports = { ranx, capitalize };
