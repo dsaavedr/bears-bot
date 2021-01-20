@@ -7,13 +7,15 @@ const gif = require("./commands/gif");
 const dump = require("./commands/dump");
 const catFacts = require("./commands/catFacts");
 const dict = require("./commands/dict");
+const insult = require("./commands/insult");
 
 const commands = {
     gif,
     hello,
     dump,
     catFacts,
-    dict
+    dict,
+    insult
 };
 
 const commandHandler = async msg => {
