@@ -32,8 +32,10 @@ const commandHandler = async msg => {
 
             if (triggers.includes(command.toLowerCase())) {
                 hello(msg);
-            } else {
+            } else if (commands.hasOwnProperty(command)) {
                 commands[command](msg, tokens);
+            } else {
+                console.log("Command not found.");
             }
         }
     }
